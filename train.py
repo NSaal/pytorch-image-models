@@ -667,15 +667,15 @@ def main():
             # writer.add_scalars('Time/epoch', {'train_time': train_metrics['train_time'] / 60,
             #                                   'eval_time': eval_metrics['eval_time'] / 60,
             #                                   'epoch_time': (end - start) / 60}, epoch)
-            writer.add_scalar('Time/train_time', train_metrics['train_time'] / 60, epoch)
-            writer.add_scalar('Time/eval_time', eval_metrics['eval_time'] / 60, epoch)
-            writer.add_scalar('Time/epoch_time', (end - start) / 60, epoch)
+            writer.add_scalar('Time/1.train_time', train_metrics['train_time'] / 60, epoch)
+            writer.add_scalar('Time/2.eval_time', eval_metrics['eval_time'] / 60, epoch)
+            writer.add_scalar('Time/3.epoch_time', (end - start) / 60, epoch)
             # writer.add_scalars('Time/total', {'time_per_epoch': totalavgtime / 60,
             #                                   'predict_all_time': totalavgtime * num_epochs / 60,
             #                                   'remain_time': totalavgtime * (num_epochs - epoch - 1) / 60}, epoch)
-            writer.add_scalar('Time/time_per_epoch', totalavgtime / 60, epoch)
-            writer.add_scalar('Time/predict_all_time', totalavgtime * num_epochs / 60, epoch)
-            writer.add_scalar('Time/remain_time', totalavgtime * (num_epochs - epoch - 1) / 60, epoch)
+            writer.add_scalar('Time/4.time_per_epoch', totalavgtime / 60, epoch)
+            writer.add_scalar('Time/5.predict_all_time', totalavgtime * num_epochs / 60, epoch)
+            writer.add_scalar('Time/6.remain_time', totalavgtime * (num_epochs - epoch - 1) / 60, epoch)
 
 
     except KeyboardInterrupt:
